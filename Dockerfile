@@ -33,6 +33,8 @@ EXPOSE 80
 # Set the default directory where CMD will execute
 WORKDIR /docker_flask_example
 
+RUN git clone https://github.com/jhorwit2/docker_flask_example.git
+
 # Set the default command to execute
 # when creating a new container
 # i.e. using CherryPy to serve the application
